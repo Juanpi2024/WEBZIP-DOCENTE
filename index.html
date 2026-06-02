@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebZip Docente - Tu Aula en un Clic</title>
     <meta name="description" content="Plataforma de distribución de Kits Didácticos Interactivos Pro-Max 100% offline para profesores. Descarga planificaciones, juegos y guías en 1-click.">
-    <!-- Google Fonts -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <meta name="theme-color" content="#060A14">
+    <!-- PWA Manifest & Icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css?v=3.0">
     <!-- Iconos FontAwesome para detalles y botones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -92,7 +95,7 @@
             </a>
             <div style="display: flex; gap: 0.75rem; align-items: center;">
                 <install installurl="https://juanpi2024.github.io/WEBZIP-DOCENTE/">
-                    <button class="pwa-install-btn">
+                    <button class="pwa-install-btn" id="pwa-fallback-btn">
                         <i class="fa-brands fa-chrome"></i> Instalar App PWA
                     </button>
                 </install>
@@ -378,5 +381,14 @@
 
     <!-- Scripts de Control -->
     <script src="js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('[PWA] Service Worker registered successfully!', reg.scope))
+                    .catch(err => console.error('[PWA] Service Worker registration failed:', err));
+            });
+        }
+    </script>
 </body>
 </html>

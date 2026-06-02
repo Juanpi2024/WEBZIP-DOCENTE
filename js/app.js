@@ -1037,3 +1037,93 @@ function initializeWallpaperRotator() {
         });
     });
 }
+
+// ═══════════════════════════════════════════════════════
+// PROGRESSIVE WEB APP (PWA) INSTALL LOGIC & FALLBACKS
+// ═══════════════════════════════════════════════════════
+let deferredPrompt = null;
+const pwaFallbackBtn = document.getElementById('pwa-fallback-btn');
+
+// Capture standard beforeinstallprompt for classic browsers and fallbacks
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    console.log('[PWA] beforeinstallprompt event captured.');
+    
+    // Ensure the custom fallback button is visible
+    if (pwaFallbackBtn) {
+        pwaFallbackBtn.style.display = 'flex';
+    }
+});
+
+// Wire up the custom PWA fallback install button
+if (pwaFallbackBtn) {
+    pwaFallbackBtn.addEventListener('click', () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('[PWA] User accepted standard PWA installation.');
+                    showPwaInstalledToast();
+                } else {
+                    console.log('[PWA] User dismissed standard PWA installation.');
+                }
+                deferredPrompt = null;
+            });
+        } else {
+            // Already installed or not supported yet (Chrome <install> trial might be active)
+            if ('HTMLInstallElement' in window) {
+                console.log('[PWA] Chrome <install> element active. Let the browser handle standard actions.');
+            } else {
+                alert('✨ ¡WebZip Docente ya se encuentra instalada o está lista para ser usada 100% offline en tu navegador! ⚡');
+            }
+        }
+    });
+}
+
+// Wire up the new experimental Chrome <install> element events
+const installTag = document.querySelector('install');
+if (installTag) {
+    installTag.addEventListener('promptaction', (e) => {
+        console.log('[PWA] 1-Click Installation via <install> element succeeded!', e);
+        showPwaInstalledToast();
+    });
+
+    installTag.addEventListener('promptdismiss', () => {
+        console.log('[PWA] User dismissed the <install> prompt dialog.');
+    });
+
+    installTag.addEventListener('validationstatuschanged', (e) => {
+        if (e.target.invalidReason) {
+            console.warn('[PWA] <install> element validation status failed:', e.target.invalidReason);
+        }
+    });
+}
+
+// Custom Toast notification for beautiful visual feedback
+function showPwaInstalledToast() {
+    const toast = document.createElement('div');
+    toast.className = 'pwa-toast';
+    toast.innerHTML = `
+        <div class="toast-indicator"></div>
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div>
+                <h4>¡WebZip Instalado!</h4>
+                <p>La aplicación se ha agregado a tu escritorio. Ya puedes usarla 100% offline sin internet.</p>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(toast);
+    
+    // Smooth transition trigger
+    setTimeout(() => toast.classList.add('active'), 100);
+    
+    // Auto-remove after 5.5 seconds
+    setTimeout(() => {
+        toast.classList.remove('active');
+        setTimeout(() => toast.remove(), 400);
+    }, 5500);
+}
+
