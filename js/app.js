@@ -19,7 +19,7 @@ const INITIAL_KITS = [
             "6 Guías de trabajo, pauta evaluativa y solucionarios DOC"
         ],
         zipPath: "../Kit_Didactico_Plantas_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Naturales_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Naturales_Septiembre_U3.pdf",
         subjectColor: "#15803D",
         subjectColorRGB: "21, 128, 61"
     },
@@ -41,7 +41,7 @@ const INITIAL_KITS = [
             "8 Fichas de trabajo, solucionarios y evaluaciones DOC"
         ],
         zipPath: "../Kit_Didactico_Naturales_Septiembre_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Naturales_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Naturales_Septiembre_U3.pdf",
         subjectColor: "#16A34A",
         subjectColorRGB: "22, 163, 74"
     },
@@ -65,7 +65,7 @@ const INITIAL_KITS = [
             "10 Guías de aprendizaje, solucionarios y evaluaciones DOC"
         ],
         zipPath: "../Kit_Didactico_Matematica_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_Septiembre_U3.pdf",
         subjectColor: "#4F46E5",
         subjectColorRGB: "79, 70, 229"
     },
@@ -87,7 +87,7 @@ const INITIAL_KITS = [
             "14 Guías de aprendizaje, solucionarios y evaluaciones DOC"
         ],
         zipPath: "../Kit_Didactico_Matematica_Septiembre_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_Septiembre_U3.pdf",
         subjectColor: "#4F46E5",
         subjectColorRGB: "79, 70, 229"
     },
@@ -109,7 +109,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PDF: 9 Guías, 2 Apuntes PPT, Prueba Sumativa y Planificación"
         ],
         zipPath: "../Kit_Didactico_Matematica_4Basico_Agosto_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_4Basico_Agosto_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_4Basico_Agosto_U3.pdf",
         subjectColor: "#4F46E5",
         subjectColorRGB: "79, 70, 229"
     },
@@ -131,7 +131,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PDF: 9 Guías, 2 Apuntes PPT, 2 Pruebas Sumativas y Planificación"
         ],
         zipPath: "../Kit_Didactico_Matematica_4Basico_Septiembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_4Basico_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_4Basico_Septiembre_U3.pdf",
         subjectColor: "#4F46E5",
         subjectColorRGB: "79, 70, 229"
     },
@@ -155,7 +155,7 @@ const INITIAL_KITS = [
             "5 Guías de trabajo, pautas de evaluación y solucionarios DOC"
         ],
         zipPath: "../Kit_Didactico_Ingles_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Ingles_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Ingles_U3.pdf",
         subjectColor: "#0D9488",
         subjectColorRGB: "13, 148, 136"
     },
@@ -177,7 +177,7 @@ const INITIAL_KITS = [
             "5 Guías de trabajo, pautas de evaluación y solucionarios DOC"
         ],
         zipPath: "../Kit_Didactico_Ingles_Septiembre_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Ingles_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Ingles_Septiembre_U3.pdf",
         subjectColor: "#0F766E",
         subjectColorRGB: "15, 118, 110"
     },
@@ -198,7 +198,7 @@ const INITIAL_KITS = [
             "Material docente en Word listo para imprimir: Apuntes 1 y 2, Guía de Preferencias y Prueba Sumativa"
         ],
         zipPath: "../Kit_Didactico_Ingles_4Basico_Agosto_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Ingles_4Basico_Agosto_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Ingles_4Basico_Agosto_U3.pdf",
         subjectColor: "#0D9488",
         subjectColorRGB: "13, 148, 136"
     },
@@ -220,7 +220,7 @@ const INITIAL_KITS = [
             "Materiales listos para imprimir en Word: Apuntes 1 y 2, Guía de Posesivos, Guía de Décadas y Evaluación Sumativa"
         ],
         zipPath: "../Kit_Didactico_Ingles_4Basico_Septiembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Ingles_4Basico_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Ingles_4Basico_Septiembre_U3.pdf",
         subjectColor: "#0F766E",
         subjectColorRGB: "15, 118, 110"
     },
@@ -244,7 +244,7 @@ const INITIAL_KITS = [
             "8 Guías de aprendizaje, evaluaciones y solucionarios DOC"
         ],
         zipPath: "../Kit_Historia_Unidad3.zip",
-        pdfPath: "../Pantallazos_Reales_Historia_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Historia_U3.pdf",
         subjectColor: "#DC2626",
         subjectColorRGB: "220, 38, 38"
     },
@@ -266,7 +266,7 @@ const INITIAL_KITS = [
             "8 Guías de aprendizaje, evaluaciones y solucionarios DOC"
         ],
         zipPath: "../Kit_Didactico_Historia_Septiembre_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Historia_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Historia_Septiembre_U3.pdf",
         subjectColor: "#B91C1C",
         subjectColorRGB: "185, 28, 28"
     },
@@ -288,7 +288,7 @@ const INITIAL_KITS = [
             "Guía de aprendizaje y evaluación sumativa DOC imprimible"
         ],
         zipPath: "../Kit_Didactico_Historia_4Basico_Septiembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Historia_4Basico_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Historia_4Basico_Septiembre_U3.pdf",
         subjectColor: "#D97706",
         subjectColorRGB: "217, 119, 6"
     },
@@ -312,7 +312,7 @@ const INITIAL_KITS = [
             "12 Guías, solucionarios y pruebas sumativas en Word"
         ],
         zipPath: "../Kit_Didactico_Lenguaje_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Lenguaje_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Lenguaje_U3.pdf",
         subjectColor: "#8B5CF6",
         subjectColorRGB: "139, 92, 246"
     },
@@ -334,7 +334,7 @@ const INITIAL_KITS = [
             "11 Guías y evaluaciones sumativas DOC descargables listas para usar"
         ],
         zipPath: "../Kit_Didactico_Lenguaje_Septiembre_3Basico_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Lenguaje_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Lenguaje_Septiembre_U3.pdf",
         subjectColor: "#7C3AED",
         subjectColorRGB: "124, 58, 237"
     },
@@ -356,7 +356,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PPT: 9 Guías, 3 Apuntes PPT y Planificación"
         ],
         zipPath: "../Kit_Didactico_Lenguaje_4Basico_Agosto_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Lenguaje_4Basico_Agosto_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Lenguaje_4Basico_Agosto_U3.pdf",
         subjectColor: "#7C3AED",
         subjectColorRGB: "124, 58, 237"
     },
@@ -378,7 +378,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PPT: 9 Guías, Apunte PPT, Evaluación Final de Unidad y Planificación"
         ],
         zipPath: "../Kit_Didactico_Lenguaje_4Basico_Septiembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Lenguaje_4Basico_Septiembre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Lenguaje_4Basico_Septiembre_U3.pdf",
         subjectColor: "#7C3AED",
         subjectColorRGB: "124, 58, 237"
     },
@@ -400,7 +400,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PPT: 5 Guías, 4 Apuntes PPT, 3 Pruebas Sumativas y Planificación"
         ],
         zipPath: "../Kit_Didactico_Lenguaje_4Basico_Octubre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Lenguaje_4Basico_Octubre_U3.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Lenguaje_4Basico_Octubre_U3.pdf",
         subjectColor: "#D01C8B",
         subjectColorRGB: "208, 28, 139"
     },
@@ -421,7 +421,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PDF listo para el aula: 5 Guías limpias, 2 Apuntes PPT, Evaluación de Unidad"
         ],
         zipPath: "../Kit_Didactico_Matematica_4Basico_Octubre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_4Basico_Octubre_U4.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_4Basico_Octubre_U4.pdf",
         subjectColor: "#4F46E5",
         subjectColorRGB: "79, 70, 229"
     },
@@ -443,7 +443,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PDF: 5 Guías de trabajo, 2 Apuntes PPT, Evaluación Sumativa y Planificación"
         ],
         zipPath: "../Kit_Didactico_Matematica_4Basico_Noviembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_4Basico_Noviembre_U4.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_4Basico_Noviembre_U4.pdf",
         subjectColor: "#10B981",
         subjectColorRGB: "16, 185, 129"
     },
@@ -465,7 +465,7 @@ const INITIAL_KITS = [
             "Material imprimible en Word/PDF: 15 Fichas y Guías limpias, 2 Apuntes PPT, Experimento Moneda, Evaluación Final"
         ],
         zipPath: "../Kit_Didactico_Matematica_4Basico_Diciembre_PROMAX.zip",
-        pdfPath: "../Pantallazos_Reales_Matematica_4Basico_Diciembre_U4.pdf",
+        pdfPath: "pdf/Pantallazos_Reales_Matematica_4Basico_Diciembre_U4.pdf",
         subjectColor: "#D97706",
         subjectColorRGB: "217, 119, 6"
     }
